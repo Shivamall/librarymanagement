@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightorange"
+    android:layout_height="match_parent"
+    tools:context="com.studentlibrary.librarymanagement.DetailofReturnBook">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/roll_no_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll No: "
+        android:layout_below="@+id/book_name"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/roll_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_name"
+        android:layout_toRightOf="@+id/roll_no_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_no_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book No: "
+        android:layout_below="@+id/roll_no"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roll_no"
+android:layout_toRightOf="@+id/book_no_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/book_author_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Author: "
+        android:layout_below="@+id/book_no"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_no"
+        android:layout_toRightOf="@+id/book_author_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/book_publish_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Publisher: "
+        android:layout_below="@+id/book_author"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_author"
+        android:layout_toRightOf="@+id/book_publish_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/book_edition_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Edition: "
+        android:layout_below="@+id/book_publish_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_edition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_publish_text"
+        android:layout_toRightOf="@+id/book_edition_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/department_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department: "
+        android:layout_below="@+id/book_edition_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_edition_text"
+        android:layout_toRightOf="@+id/department_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Type: "
+        android:layout_below="@+id/department_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/book_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/department_text"
+        android:layout_toRightOf="@+id/book_type_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/barcode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barcode: "
+        android:layout_below="@+id/book_type"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_type"
+        android:layout_toRightOf="@+id/barcode_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/issue_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Date: "
+        android:layout_below="@+id/barcode_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/issue_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barcode_text"
+        android:layout_toRightOf="@+id/issue_date_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/return_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Date: "
+        android:layout_below="@+id/issue_date_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/return_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issue_date_text"
+        android:layout_toRightOf="@+id/return_date_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/actual_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Date: "
+        android:layout_below="@+id/return_date_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/actual_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_date_text"
+        android:layout_toRightOf="@+id/actual_date_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/fine_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine: "
+        android:layout_below="@+id/actual_date_text"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actual_date_text"
+        android:layout_toRightOf="@+id/fine_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+
+            <Button
+                android:onClick="returnBook"
+                android:layout_below="@+id/fine"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return book"/>
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

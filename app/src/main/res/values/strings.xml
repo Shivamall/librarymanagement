@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Library Management</string>
+
+    <string-array name="books_category_array">
+        <item>Fiction</item>
+        <item>GK</item>
+        <item>Subject</item>
+    </string-array>
+
+    <string-array name="department_name_array">
+        <item>CSE</item>
+        <item>ME</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+    </string-array>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@mipmap/login"
+    tools:context="com.studentlibrary.librarymanagement.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/lib_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/liibrary"
+        android:layout_margin="35dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#90616161"
+          android:layout_below="@id/lib_icon"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+   >
+
+
+<EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter email"
+    android:layout_weight="50"
+    android:textColor="@color/white"
+    android:layout_gravity="center_vertical"
+    android:background="#00000000"
+    android:textColorHint="@color/white"
+    android:inputType="textEmailAddress"
+
+    />
+<ImageView
+    android:id="@+id/email_icon"
+    android:layout_width="25dp"
+    android:layout_weight="5"
+    android:layout_height="25dp"
+
+    android:layout_gravity="center_vertical"
+    android:src="@mipmap/email"
+
+    />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sec_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#90616161"
+       android:layout_below="@+id/layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="15dp">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_gravity="center_vertical"
+        android:background="#00000000"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+      android:hint="Enter password"
+        android:inputType="textPassword"
+      />
+
+        <ImageView
+            android:id="@+id/lock_icon"
+            android:layout_width="25dp"
+            android:layout_weight="10"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/lock"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sec_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD?"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+    android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

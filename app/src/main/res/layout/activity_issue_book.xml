@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studentlibrary.librarymanagement.IssueBook">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/scan_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="scan"
+                android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+             android:src="@drawable/scan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to Scan"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:background="#30000000"
+    android:layout_marginTop="10dp"
+    />
+
+            <EditText
+                android:id="@+id/qrcode_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter qr code"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:onClick="SearchButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:layout_marginLeft="15dp"
+                android:hint="get name"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Author"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/book_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get author"
+                android:editable="false"
+                android:background="@drawable/border"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Publisher"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/book_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get publisher"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Edition"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/book_edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get edition"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+
+            <EditText
+                android:id="@+id/department_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get department "
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Copies"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/no_of_copies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get no of copies "
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Type"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+
+            <EditText
+                android:id="@+id/book_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="get book type "
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+<Button
+    android:id="@+id/next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+</RelativeLayout>

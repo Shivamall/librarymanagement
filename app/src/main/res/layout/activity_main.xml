@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main"
+    tools:context="com.studentlibrary.librarymanagement.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MAIN ACTIVITY"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/logout"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+<ImageView
+
+    android:id="@+id/logo"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@mipmap/logo"
+    android:layout_below="@+id/toolbar"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/mybutton"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="8dp">
+
+<Button
+    android:id="@+id/view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="90"
+    android:textColor="@color/white"
+    android:textSize="23sp"
+    android:background="@color/colorPrimary"
+    android:text="View Books"
+    />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/view"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/mybutton"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="8dp">
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:text="Add Books"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/addbook"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+         />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/mybutton"
+        android:layout_below="@id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="8dp">
+
+
+
+    <Button
+        android:id="@+id/issue_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="issue book"
+        android:onClick="isuuebook"
+        android:layout_weight="90"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:background="@color/colorPrimary"
+
+        />
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/issue"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/mybutton"
+        android:layout_below="@id/layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="8dp">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Book"
+        android:onClick="ReturnBook"
+        android:layout_weight="90"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:background="@color/colorPrimary" />
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/returnbook"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"/>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

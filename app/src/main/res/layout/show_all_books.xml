@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_margin="7dp"
+    android:background="@color/white">
+
+
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Of Thrones"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shiva Mall"
+            android:layout_below="@id/book_name"
+            android:padding="8dp"
+            android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/book_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sidharth Thukral"
+        android:layout_below="@id/book_author"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/book_edition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_below="@id/book_publisher"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/department_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CSE"
+        android:layout_below="@id/book_edition"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/book_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiction"
+        android:layout_below="@id/department_name"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+
+
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bsajdgasausdbmbaxiasbkakxasiyihckk hciashhcka  hhihskhxkaschckhaskcnbiohpCKAHCPASCCAHCLASK"
+        android:layout_below="@id/book_type"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/total_copies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2500"
+        android:layout_below="@id/barcode"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/total_copies">
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+     android:layout_weight="1"
+        />
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"/>
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
